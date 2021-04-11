@@ -84,6 +84,10 @@ client.on('message', (msg) => {
             "- The Duck")
     }
 
+    if (msg.content === "!repent"){
+        msg.reply("REPENT OR PERISH. YOU HAVE NO CONTROL OVER YOUR FATE.")
+    }
+
     // image retrieval
     if (msg.content === '!miaolaw') {
         //msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');
