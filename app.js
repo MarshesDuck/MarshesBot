@@ -38,7 +38,42 @@ const prayers = [
 ]
 
 // Scripture
-
+const miao = [
+    "Reminders: The things of this world exists in a quantum state between matter and energy, the moment you lay your eyes on any being they will simultaneously physically collapse into one state of being.",
+    "Keep comments related to reality.",
+    "Political Farm\n" +
+    "It's 1927 and the discovery of science uncovers decades of darkness. A brilliant wannabe, Solomon Kelly, who has always been bitter of everyday occurrences, must race against the chaos.  The world is largely consumed by Raymond, a young cartographer from the British monarchy. However, Solomon is fighting for himself,  along with his thoughts that pursued problematic prejudices. Traveling despite knowing that he might someday expose humanity,  Solomon must escape childish authorities and Alicia - the government caregiver. After seven years in a trailer, the British agreed over the 1920s,  but some answers are still in Americans.\n" +
+    "A Very Human Production Directed by Mass Hysteria Written by Clueless Politicians Starring The Internet Pointless Outrage Music by Neverending Screams Edited by Hindsight 2020 Executive Producers Non Existent Screenplay by Clever Bot",
+    "Earth \n" +
+    "claiming to have murdered racism, a hardened member of the ocean culture committed amphibious therapy on humanity. the results bringing entire catholic business beliefs to the west. However one hundred judgmental critics led by Katherine Prima believes that introverted senators are slightly more amphibious. war with existence and the fabric of survival began, and earth quickly discovers that spending time with mental people will result in artistic assassinations. earth rests wearing a fitting cardigan,  until Illinois became jealous and quietly runs, soon fulfilled, leaving Katherine safe from literal revolutionaries.",
+    "Leap day of faith",
+    "A story about a guy who fell in love with a clone but the clone rejected him because he failed to tell the clone apart from other clones.",
+    "I like red blankets because I cover myself up in them then the sun shines through the red fabric it make me feel like I'm back in the womb and my conscious would be soon distributed to a new body in a new dimension",
+    "Death is a state that immediately follows life. Only very rarely does it not occur in that order.  During death the body's organs, like employees without an immediate supervisor, become confused and wander around the body looking for someone in charge. They meet in the buttocks where they hold a seance. They contact the dark spirit who was present at birth but learn that he has been made redundant due to cutbacks. Panicking, the organs argue amongst themselves briefly before turning out the lights and leaving, never to be heard of again. Some religions believe that when a deceased person is buried they are reincarnated as soil.",
+    "Often I dream about my siblings, a brother here and a sister there. I was the only child of my parents. Years and years I've searched for my dear long lost kin, now I understand. My poor poor brothers and sisters were sealed into this wall, their bodies abosrbed by lifeless concrete yet their voices live on. The voices seeped through the cracks, whispering to me.",
+    "When the human race comes to an end, I would want to lie on a grassy field. I would want stars above me as a lay there, chaos and death slowly shrouds my insignificant form. I would stroke the grass beneath me; I would feel its prehaps coarse prehaps smooth blades running through my fingers. Then I would speak to the Earth: *\"65 million years ago the dinosaurs went extinct, today we will. But that's ok, in 65 million years I'll come back, I'll come back and visit you again. Because I love you Earth, and I love the existence of life. I love it at the moment of my death, and I'll love it for the next 65 million years.\"*",
+    "I walked the dimly lit halls underneath the ground, drearily dragging through the heavy air that settled beneath all the bustling human life above me. I fought against the air, the stagnation that clouded much people's sights, I was fighting against it so it will not blind my eyes. \n" +
+    "Soon I felt my eyes stagnate too, as if my eye balls have melted and amalgamated into the air around me. My own eyes circled around me, mocking me, suffocating me. They were ghosts that haunted me now, I shut my eyes but my weary husk still betrays me, it always had in times like these.",
+    "I knocked on the worn door of the facility, not expecting any response or humoring from those inside. They were in a world that was parallel to mine, should we ever intersect means we would simply grow apart more and more after that.\n" +
+    "\"Hello? Please! I want to verify my existence! It has been years since my last verification, I believe it is long over due.\" My voice was firm, it was boasted more confidence than it ever did, and perhaps ever will be as my mind pushed back on the door's bureaucratic presence. \n" +
+    "I knocked the door once more, it's peeling texture scrapped against my hand, leaving the skin raw red. I didn't care. I continued the assault on this innocent unfeeling door. Then the truth hit me like a door hinge to the tail of an unfortunate cat. \n" +
+    "This was no door, this was an old wall all along.",
+    "It was a hazy hallway that stretched beyond what a child's eyes could see. Or perhaps what laid beyond that haze was something so unimaginable that one's mind filtered it out from their vision. Regardless of whether it did or not, I sat at the edge of the hallway, silently staring down at the heavy metal doors that littered the parallel walls around me. I attempted to filter the doors out of my sight but to no avail. I wanted to see the walls.",
+    "\"Tell me a story, Crack on the Wall!\" What a magnificent piece of geometry it is! The zigzagging lines that branches into multiple thinner lines, eventually trailing off into the dusty white chalked paint, disappearing as if they've returned to their own world. Once I stare into the wonderful line it often stares back, small pieces of white dust floated near it and some took a footing inside. The universe sat in the line, shimmering stars swirling and swishing around. And like the universe, it told me the most grandiose tales one can ever hear.",
+    "There was no wall, in fact there was nothing. The scenery, despite it's simplism, still melted away. Doors and walls and windows twisted and swayed along with my footsteps, they started breathing my air. They're taking my air away. Desperately I quickened my footsteps, the little pitter patter my feet made was like a rythmic plead for acknowledgement. I zigzaged through what remained of the halls, some doors had given away, evaporated into thin air. I banged my hands against a door that was worn by the air but still kept it's shape, I wanted to scream but my eyes muffled me.",
+    "That year I went to count the springs again. Though many of them laid dormant from the recent droughts I’ve never doubted for a moment that they will begin to trickle once more someday. The Yellow River will run on regardless of the humans that have settled around it, limestones will filter the aquifers despite the city built upon it, and the springs will trickle regardless of the the names we give them.",
+    "It is a shame that it is so hard to reasonably debate, when it comes to those that you cannot reason with, there is no winning. There is only decibels.",
+    "That's why you must not exist.",
+    "Communism doesn't work for a reason, each day the leftist in me gets skinned a little more.",
+    "Put me in a centrifuge, that way I'll spin and spin and my solids would be separated from my liquids and my organs and bones and  squishy bits will all be swung and swung into my legs and waist while my brain will be nothing but liquid and liquid. It is confusing.",
+    "You know if you take hentai and censor all the nudity with pictures of Snickers bars it looks like people having a really heated Snickers lightsaber duel.",
+    "should i go buy chicken tendies\n" +
+    "is it too late\n" +
+    "its too late, my sins are weighing on me, i cant breath",
+    "all flesh is tempoary release yourself from your meat prisons",
+    "Yes, you will be metaphysically deleted if you venture out of this channel",
+    "Do not worry, for the ceasing of existence is nothing but bliss, you will be reborn into an untroubled world, unplagued by the quarrels of metaphysical existence",
+]
 
 // bot start
 client.on('ready', () => {
@@ -49,7 +84,7 @@ client.on('ready', () => {
 
 client.on('message', (msg) => {
     // miaohelp
-    if (msg.content === "!miaohelp"){
+    if (msg.content === "!miaohelp") {
         msg.reply("Full list of holy commands:\n" +
             "!hello, !hi, !hoi, !hello long \n" +
             "!prayer \n" +
@@ -70,8 +105,13 @@ client.on('message', (msg) => {
         msg.channel.send(prayers[Math.floor(Math.random() * prayers.length)]);
     }
 
+    // scripture
+    if (msg.content === '!miao') {
+        msg.channel.send(miao[Math.floor(Math.random() * miao.length)]);
+    }
+
     // apology
-    if (msg.content === '!apology'){
+    if (msg.content === '!apology') {
         msg.channel.send("sorry if all of this is really awkward miao. I hope you can see the humour in it all.");
     }
 
@@ -88,14 +128,14 @@ client.on('message', (msg) => {
         msg.reply('hoi');
     }
 
-    if (msg.content === "!hello long"){
+    if (msg.content === "!hello long") {
         msg.reply("Hello,\n" +
             "I hope you are having a wonderful day. \n" +
             "May the glory of Miao be with you.\n" +
             "- The Duck")
     }
 
-    if (msg.content === "!repent"){
+    if (msg.content === "!repent") {
         msg.reply("REPENT OR PERISH. YOU HAVE NO CONTROL OVER YOUR FATE.")
     }
 
@@ -109,7 +149,7 @@ client.on('message', (msg) => {
             .catch(console.error);
     }
 
-    if (msg.content === '!av'){
+    if (msg.content === '!av') {
         msg.channel.send({
             files: [msg.author.displayAvatarURL()]
         })
