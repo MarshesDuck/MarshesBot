@@ -38,7 +38,11 @@ client.on('message', (msg) => {
 	
 	if (msg.content === '!hello') {msg.channel.send('Hi');}
 	
+<<<<<<< HEAD
 	if (msg.content === '!miaolaw') {msg.channel.send(''{files: ["https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png"]});}
+=======
+	if (msg.content === '!miaolaw') {msg.reply('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');}
+>>>>>>> parent of cc68a9e (Update app.js)
 });
 
 client.login(process.env.BOT_TOKEN);
