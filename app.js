@@ -48,7 +48,18 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
-
+    // miaohelp
+    if (msg.content === "!miaohelp"){
+        msg.reply("Full list of holy commands:\n" +
+            "!hello, !hi, !hoi, !hello long \n" +
+            "!prayer \n" +
+            "!joke \n" +
+            "!apology \n" +
+            "!repent \n" +
+            "!miaolaw \n" +
+            "!av \n" +
+            "!miao (coming soon) \n");
+    }
     // jokes
     if (msg.content === '!joke') {
         msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);
