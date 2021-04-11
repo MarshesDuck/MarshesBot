@@ -28,7 +28,7 @@ const jokes = [
 
 client.on('ready', () => {
   console.log('Bot is ready');
-  bot.user.setActivity('More human than MarshesDuck', { type: "STREAMING" }).catch(console.error)
+  client.user.setActivity('More human than MarshesDuck', { type: "WATCHING" }).catch(console.error)
 
 });
 
