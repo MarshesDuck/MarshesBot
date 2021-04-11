@@ -1,15 +1,13 @@
-# Discord BOT built with discord.js
+# Simple discord.js Bot
 
 A simple discord bot built with discord.js.
-The app has two functions
 
-- Telling Jokes
-- Making Mods
+Functions:
 
-## Telling Jokes
+- Telling Jokes (courtesy of nemo0)
+- Saying hello.
+- Sending a link to the server icon.
 
-Takes jokes from an array defined in the app.js file. Can also be achieved using some API. The `!joke` command is used to trigger it.
+Planned Features (for now):
 
-## Making Moderators
-
-Can also be used to make a moderator. The `!mod` command can be used.
+- Command to say old quotes from a friend. 
