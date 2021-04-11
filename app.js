@@ -37,6 +37,8 @@ client.on('message', (msg) => {
   msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);}
 	
 	if (msg.content === '!hello') {msg.reply('Hi');}
+	
+	if (msg.content === '!miaolaw') {msg.reply('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');}
 });
 
 client.login(process.env.BOT_TOKEN);
