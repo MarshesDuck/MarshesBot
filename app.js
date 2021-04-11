@@ -34,11 +34,11 @@ client.on('ready', () => {
 
 client.on('message', (msg) => {
   if (msg.content === '!joke'){
-  msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);}
+  msg.channel.send(jokes[Math.floor(Math.random() * jokes.length)]);}
 	
-	if (msg.content === '!hello') {msg.reply('Hi');}
+	if (msg.content === '!hello') {msg.channel.send('Hi');}
 	
-	if (msg.content === '!miaolaw') {msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');}
+	if (msg.content === '!miaolaw') {msg.channel.send(''{files: ["https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png"]});}
 });
 
 client.login(process.env.BOT_TOKEN);
