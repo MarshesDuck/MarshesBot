@@ -28,6 +28,14 @@ const jokes = [
 
 client.on('ready', () => {
   console.log('Bot is ready');
+  
+  client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "More human than MarshesDuck",  //The message shown
+            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
 });
 
 client.on('message', (msg) => {
