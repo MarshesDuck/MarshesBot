@@ -34,7 +34,7 @@ client.on('message', (msg) => {
   if (msg.content === '!joke'){
   msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);}
 	
-	if (msg.content === 'Hello') {msg.reply('Hi');}
+	if (msg.content === '!hello') {msg.reply('Hi');}
 });
 
 client.login(process.env.BOT_TOKEN);
