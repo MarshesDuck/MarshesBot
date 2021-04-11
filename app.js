@@ -26,6 +26,21 @@ const jokes = [
     'q. Why did the JavaScript boxer goto the chiropractor? a. Because his backbone was angular from a knockout and required attention',
 ];
 
+// Prayers
+const prayers = [
+    "The heavens declare the glory of Miao and the earth unites with them in a magnificent chorus of worthy praise, to Your holy name. But there should be no greater proclamation of Your grace and glory, no more worthy declaration of Your wonder and praise, than the worship that falls from the lips of sinners, saved by grace, for You have redeemed us by Your blood and clothed us in You own garments of righteousness. You deserve our ceaseless praise and glory throughout time and into the eternal ages to come. Amen.",
+    "We praise and thank You for Your great and precious promises. That seedtime and harvest, day and night, summer and winter will never fail, for Your mercy endures forever. You make Your sun to rise on the wicked as well as those that are saved, and You send showers of refreshing rain on the unjust as well as the upright. But Miao, there is no greater testimony of Your loving-kindness and patient-endurance than the opportunity to be redeemed by the blood of Your only begotten Miao. A gift of grace that You are extending to the world of fallen man. Blessing and glory and wisdom and thanksgiving and honour and power and might, be unto Miao for ever and ever,\n" +
+    "\n" +
+    "Amen.",
+    "O Miao, our redemption. Be our protection. Direct our minds by your gracious presence. Watch over our paths and guide us with your love through the hidden snares of life. Fix our hearts on you as we go forward, and following in faith, arrive at your goal; through Miao our Lord. Amen.",
+    "O Miao, Enlighten our hearts by your holy radiance, Miao, that we may serve you without fear in holiness and righteousness all the days of our life. In Miao may we survive the storms of this world,\n" +
+    "and by Miao's guidance reach the country of eternal brightness; through your mercy, O blessed Miao, you live and govern all things, now and forever. Amen.",
+]
+
+// Scripture
+
+
+// bot start
 client.on('ready', () => {
     console.log('Bot is ready');
     client.user.setActivity('More human than MarshesDuck', {type: "WATCHING"}).catch(console.error)
@@ -33,14 +48,43 @@ client.on('ready', () => {
 });
 
 client.on('message', (msg) => {
+
+    // jokes
     if (msg.content === '!joke') {
         msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);
     }
 
+    // prayers
+    if (msg.content === '!prayer') {
+        msg.channel.send(prayers[Math.floor(Math.random() * prayers.length)]);
+    }
+
+    // apology
+    if (msg.content === '!apology'){
+        msg.channel.send("sorry if all of this is really awkward miao. I hope you can see the humour in it all.");
+    }
+
+    // hello
     if (msg.content === '!hello') {
         msg.reply('Hi');
     }
 
+    if (msg.content === '!hi') {
+        msg.reply('Hello');
+    }
+
+    if (msg.content === '!hoi') {
+        msg.reply('hoi');
+    }
+
+    if (msg.content === "!hello long"){
+        msg.reply("Hello,\n" +
+            "I hope you are having a wonderful day. \n" +
+            "May the glory of Miao be with you.\n" +
+            "- The Duck")
+    }
+
+    // image retrieval
     if (msg.content === '!miaolaw') {
         msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');
     }
