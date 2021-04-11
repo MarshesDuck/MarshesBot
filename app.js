@@ -86,7 +86,20 @@ client.on('message', (msg) => {
 
     // image retrieval
     if (msg.content === '!miaolaw') {
-        msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');
+        //msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');
+        msg.channel.send({
+            files: ['https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png']
+        })
+            .then(console.log)
+            .catch(console.error);
+    }
+
+    if (msg.content === '!av'){
+        msg.channel.send({
+            files: [msg.author.displayAvatarURL()]
+        })
+            .then(console.log)
+            .catch(console.error);
     }
 });
 
