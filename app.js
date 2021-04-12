@@ -115,6 +115,11 @@ client.on('message', (msg) => {
         msg.channel.send("sorry if all of this is really awkward miao. I hope you can see the humour in it all.");
     }
 
+    // pat
+    if (msg.content === '!pat') {
+        msg.channel.send("*happiness + 1*");
+    }
+
     // hello
     if (msg.content === '!hello') {
         msg.reply('Hi');
