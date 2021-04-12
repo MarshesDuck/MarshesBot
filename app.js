@@ -147,6 +147,11 @@ client.on('message', (msg) => {
         msg.channel.send("*happiness + 1*");
     }
 
+    // !flirt
+    if (msg.content === '!flirt') {
+        msg.channel.send("*flushed*");
+    }
+
     // squish
     /*if (msg.content === '!squish') {
         msg.channel.send("*hp - 1*");
