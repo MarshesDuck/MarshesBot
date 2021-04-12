@@ -137,7 +137,7 @@ client.on('message', (msg) => {
     /*if (msg.content === '!squish') {
         msg.channel.send("*hp - 1*");
     }
-    
+
      */
 
     // squish
@@ -182,6 +182,16 @@ client.on('message', (msg) => {
     if (msg.content === '!av') {
         msg.channel.send({
             files: [msg.author.displayAvatarURL()]
+        })
+            .then(console.log)
+            .catch(console.error);
+    }
+
+    // heals
+    if (msg.content === '!healme') {
+        //msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/831005372462006362/1618025025378.jpg');
+        msg.channel.send({
+            files: ['https://cdn.discordapp.com/attachments/830499580234956800/831005372462006362/1618025025378.jpg']
         })
             .then(console.log)
             .catch(console.error);
