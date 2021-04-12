@@ -20,4 +20,4 @@ Planned Features (for now):
 4. Start editing app.js (any text editor or IDE is ok, but I recommend Webstorm IDE)
 5. Push changes to your fork.
 6. Create a new Pull Request.
-7. Done!
+7. Done 
