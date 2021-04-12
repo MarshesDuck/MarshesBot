@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 require('dotenv').config();
 
+/* ---------------------------------------------
+    Arrays containing bot responses
+ ----------------------------------------------*/
+
 // Jokes
 const jokes = [
     "What rock group has four men that don't sing? Mount Rushmore.",
@@ -88,6 +92,10 @@ const squish = [
     "hp+1",
 ]
 
+/* ---------------------------------------------
+    Set Bot Status
+ ----------------------------------------------*/
+
 // bot start
 client.on('ready', () => {
     console.log('Bot is ready');
@@ -95,8 +103,14 @@ client.on('ready', () => {
 
 });
 
+/* ---------------------------------------------
+    Bot Commands
+ ----------------------------------------------*/
+
+// bot commands
 client.on('message', (msg) => {
-    // miaohelp
+
+    // !miaohelp
     if (msg.content === "!miaohelp") {
         msg.reply("Full list of holy commands:\n" +
             "!hello, !hi, !hoi, !hello long \n" +
@@ -108,27 +122,27 @@ client.on('message', (msg) => {
             "!av \n" +
             "!miao (coming soon) \n");
     }
-    // jokes
+    // !joke
     if (msg.content === '!joke') {
         msg.reply(jokes[Math.floor(Math.random() * jokes.length)]);
     }
 
-    // prayers
+    // !prayer
     if (msg.content === '!prayer') {
         msg.channel.send(prayers[Math.floor(Math.random() * prayers.length)]);
     }
 
-    // scripture
+    // !scripture
     if (msg.content === '!miao') {
         msg.channel.send(miao[Math.floor(Math.random() * miao.length)]);
     }
 
-    // apology
+    // !apology
     if (msg.content === '!apology') {
         msg.channel.send("sorry if all of this is really awkward miao. I hope you can see the humour in it all.");
     }
 
-    // pat
+    // !pat
     if (msg.content === '!pat') {
         msg.channel.send("*happiness + 1*");
     }
@@ -140,24 +154,27 @@ client.on('message', (msg) => {
 
      */
 
-    // squish
+    // !squish
     if (msg.content === '!squish') {
         msg.channel.send(squish[Math.floor(Math.random() * squish.length)]);
     }
 
-    // hello
+    // !hello
     if (msg.content === '!hello') {
         msg.reply('Hi');
     }
 
+    // !hi
     if (msg.content === '!hi') {
         msg.reply('Hello');
     }
 
+    // !hoi
     if (msg.content === '!hoi') {
         msg.reply('hoi');
     }
 
+    // !hello long
     if (msg.content === "!hello long") {
         msg.reply("Hello,\n" +
             "I hope you are having a wonderful day. \n" +
@@ -165,11 +182,15 @@ client.on('message', (msg) => {
             "- The Duck")
     }
 
+    // !repent
     if (msg.content === "!repent") {
         msg.reply("REPENT OR PERISH. YOU HAVE NO CONTROL OVER YOUR FATE.")
     }
 
+
     // image retrieval
+
+    // !miaolaw
     if (msg.content === '!miaolaw') {
         //msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/830560148388708393/1-800.png');
         msg.channel.send({
@@ -179,6 +200,8 @@ client.on('message', (msg) => {
             .catch(console.error);
     }
 
+
+    // !av
     if (msg.content === '!av') {
         msg.channel.send({
             files: [msg.author.displayAvatarURL()]
@@ -187,7 +210,7 @@ client.on('message', (msg) => {
             .catch(console.error);
     }
 
-    // heals
+    // !healme
     if (msg.content === '!healme') {
         //msg.channel.send('https://cdn.discordapp.com/attachments/830499580234956800/831005372462006362/1618025025378.jpg');
         msg.channel.send({
@@ -198,4 +221,5 @@ client.on('message', (msg) => {
     }
 });
 
+// login
 client.login(process.env.BOT_TOKEN);
