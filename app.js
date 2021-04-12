@@ -120,6 +120,11 @@ client.on('message', (msg) => {
         msg.channel.send("*happiness + 1*");
     }
 
+    // squish
+    if (msg.content === '!squish') {
+        msg.channel.send("*hp - 1*");
+    }
+
     // hello
     if (msg.content === '!hello') {
         msg.reply('Hi');
