@@ -75,6 +75,19 @@ const miao = [
     "Do not worry, for the ceasing of existence is nothing but bliss, you will be reborn into an untroubled world, unplagued by the quarrels of metaphysical existence",
 ]
 
+// squish
+const squish = [
+    "Is kill",
+    "hp-1",
+    "hp-1",
+    "hp-1",
+    "hp-1",
+    "Critical hit! Hp-2",
+    "Hp-0 \n" +
+    "It was not very effective...",
+    "hp+1",
+]
+
 // bot start
 client.on('ready', () => {
     console.log('Bot is ready');
@@ -121,8 +134,15 @@ client.on('message', (msg) => {
     }
 
     // squish
-    if (msg.content === '!squish') {
+    /*if (msg.content === '!squish') {
         msg.channel.send("*hp - 1*");
+    }
+    
+     */
+
+    // squish
+    if (msg.content === '!squish') {
+        msg.channel.send(squish[Math.floor(Math.random() * squish.length)]);
     }
 
     // hello
