@@ -15,7 +15,7 @@ Planned Features (for now):
 
 # Add your own features!
 
-Method 1: DIY
+### Method 1: DIY
 1. Fork this repo.
 2. download Node.js https://nodejs.org/en/
 3. Open up cmd and type in: ``npm install discord.js``
@@ -26,4 +26,5 @@ Method 1: DIY
 
 Don't want to go through all that work? No problem.
 
-Method 2: Create a new issue, and tell me what feature you'd like to add in. Then I'll work on it. 
+### Method 2: More dreaming, less worrying
+Create a new issue, and tell me what feature you'd like to add in. Then I'll work on it. 
