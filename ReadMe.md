@@ -27,4 +27,4 @@ Planned Features (for now):
 Don't want to go through all that work? No problem.
 
 ### Method 2: More dreaming, less worrying
-1. Create a new issue, and tell me what feature you'd like to add in. Then I'll work on it. 
+1. [Create a new issue](https://github.com/MarshesDuck/MarshesBot/issues), and tell me what feature you'd like to add in. Then I'll work on it. 
