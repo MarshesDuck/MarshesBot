@@ -194,6 +194,7 @@ client.on('message', (msg) => {
 
         if (HP <= 0){
             msg.channel.send("MarshesBot fainted.");
+            Happiness--;
             HP = 10;
             msg.channel.send("MarshesBot respawns!");
         }
