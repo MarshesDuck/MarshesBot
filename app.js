@@ -200,6 +200,13 @@ client.on('message', (msg) => {
         }
     }
 
+    // !feed
+    if (msg.content === "!feed"){
+        HP++;
+        msg.channel.send("You feed the MarshesBot");
+        msg.channel.send ("HP + 1");
+    }
+
     // !hp or !HP
 
     if (msg.content === "!hp" || msg.content === "!HP"){
