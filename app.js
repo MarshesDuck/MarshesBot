@@ -113,17 +113,24 @@ client.on('ready', () => {
 // bot commands
 client.on('message', (msg) => {
 
+    // !help
+    if (msg.content === "!help"){
+        msg.channel.send(
+            "**Greetings**: !hello, !hi, !hoi, \n" +
+            "**Fun**: !joke, !av, !healme !repent \n" +
+            "**Interact**: !pat, !flirt, !squish, !hp, !happiness, !feed \n"
+        )
+    }
+
     // !miaohelp
     if (msg.content === "!miaohelp") {
         msg.reply("Full list of holy commands:\n" +
-            "!hello, !hi, !hoi, !hello long \n" +
+            "!hello long \n" +
             "!prayer \n" +
-            "!joke \n" +
             "!apology \n" +
             "!repent \n" +
             "!miaolaw \n" +
-            "!av \n" +
-            "!miao (coming soon) \n");
+            "!miao \n");
     }
     // !joke
     if (msg.content === '!joke') {
@@ -152,8 +159,8 @@ client.on('message', (msg) => {
     }
 
     // !happiness
-    if (msg.content === "!happiness"){
-        msg.channel.send ("Happiness: " + Happiness);
+    if (msg.content === "!happiness") {
+        msg.channel.send("Happiness: " + Happiness);
     }
 
     // !flirt
@@ -176,23 +183,24 @@ client.on('message', (msg) => {
 
      */
 
-    if (msg.content === "!squish"){
+    // !squish
+    if (msg.content === "!squish") {
         let status = squish[Math.floor(Math.random() * squish.length)];
-        if (status.toString() === "hp-1"){
+        if (status.toString() === "hp-1") {
             HP--;
         }
-        if (status.toString() ==="hp+1"){
+        if (status.toString() === "hp+1") {
             HP++;
         }
-        if (status.toString() === "Critical hit! Hp-2"){
-            HP-=2;
+        if (status.toString() === "Critical hit! Hp-2") {
+            HP -= 2;
         }
-        if (status.toString() === "Is kill"){
+        if (status.toString() === "Is kill") {
             HP = 0;
         }
         msg.channel.send(status);
 
-        if (HP <= 0){
+        if (HP <= 0) {
             msg.channel.send("MarshesBot fainted.");
             Happiness--;
             HP = 10;
@@ -201,15 +209,14 @@ client.on('message', (msg) => {
     }
 
     // !feed
-    if (msg.content === "!feed"){
+    if (msg.content === "!feed") {
         HP++;
         msg.channel.send("You feed the MarshesBot");
-        msg.channel.send ("HP + 1");
+        msg.channel.send("HP + 1");
     }
 
     // !hp or !HP
-
-    if (msg.content === "!hp" || msg.content === "!HP"){
+    if (msg.content === "!hp" || msg.content === "!HP") {
         msg.channel.send(HP);
     }
 
