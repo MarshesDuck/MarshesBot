@@ -281,20 +281,6 @@ client.on('message', (msg) => {
             .catch(console.error);
     }
 
-    // administrative
-
-    //!setcolour (in testing
-    if (!msg.content.startsWith("!setcolour")) {
-        const args = (msg.content.slice(11).trim().split(' '));
-
-        if (msg.content.includes("#")){
-            msg.channel.send("colour changed (in beta)")
-        }
-        else {
-            msg.channel.send("no arguments included.")
-        }
-    }
-
 });
 
 // login
