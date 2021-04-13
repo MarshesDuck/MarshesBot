@@ -6,6 +6,9 @@ require('dotenv').config();
     Arrays containing bot responses
  ----------------------------------------------*/
 
+let HP = 10;
+let Happiness = 10;
+
 // Jokes
 const jokes = [
     "What rock group has four men that don't sing? Mount Rushmore.",
@@ -144,7 +147,13 @@ client.on('message', (msg) => {
 
     // !pat
     if (msg.content === '!pat') {
+        Happiness++;
         msg.channel.send("*happiness + 1*");
+    }
+
+    // !happiness
+    if (msg.content === "!happiness"){
+        msg.channel.send ("Happiness: " + Happiness);
     }
 
     // !flirt
