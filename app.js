@@ -201,7 +201,7 @@ client.on('message', (msg) => {
 
     // !hp or !HP
 
-    if (msg.content === "!hp" || msg.content === "!HP"){
+    if (msg.content === "!hp"){
         msg.content.send(HP);
     }
 
