@@ -169,8 +169,34 @@ client.on('message', (msg) => {
      */
 
     // !squish
+    /*
     if (msg.content === '!squish') {
         msg.channel.send(squish[Math.floor(Math.random() * squish.length)]);
+    }
+
+     */
+
+    if (msg.content === "!squish"){
+        let status = squish[Math.floor(Math.random() * squish.length)];
+        if (status.toString() === "hp-1"){
+            HP--;
+        }
+        if (status.toString() ==="hp+1"){
+            HP++;
+        }
+        if (status.toString() === "Critical hit! Hp-2"){
+            HP-=2;
+        }
+        if (status.toString() === "Is kill"){
+            HP = 0;
+        }
+        msg.channel.send(status);
+
+        if (HP <= 0){
+            msg.channel.send("MarshesBot fainted.");
+            HP = 10;
+            msg.channel.send("MarshesBot respawns!");
+        }
     }
 
     // !hello
