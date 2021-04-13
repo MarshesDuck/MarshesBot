@@ -114,7 +114,7 @@ client.on('ready', () => {
 client.on('message', (msg) => {
 
     // !help
-    if (msg.content === "!help"){
+    if (msg.content === "!help") {
         msg.channel.send(
             "**Greetings**: !hello, !hi, !hoi, \n" +
             "**Fun**: !joke, !av, !healme !repent \n" +
@@ -280,6 +280,24 @@ client.on('message', (msg) => {
             .then(console.log)
             .catch(console.error);
     }
+
+    // administrative
+
+    //!setcolour (in testing
+    if (!msg.content.startsWith("!setcolour")) {
+        const args = (msg.content.slice(11).trim().split(' '));
+
+        if (!args.length) {
+            return msg.channel.send("You didn't provide any arguments. Usage: !setcolour [hexcode]")
+                .then(console.log)
+                .catch(console.error);
+        } else {
+            msg.channel.send(`First argument: ${args[0]}`)
+                .then(console.log)
+                .catch(console.error);
+        }
+    }
+
 });
 
 // login
