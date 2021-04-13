@@ -199,6 +199,12 @@ client.on('message', (msg) => {
         }
     }
 
+    // !hp or !HP
+
+    if (msg.content === "!hp" || msg.content === "!HP"){
+        msg.content.send(HP);
+    }
+
     // !hello
     if (msg.content === '!hello') {
         msg.reply('Hi');
