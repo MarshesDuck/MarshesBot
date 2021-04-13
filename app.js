@@ -287,14 +287,11 @@ client.on('message', (msg) => {
     if (!msg.content.startsWith("!setcolour")) {
         const args = (msg.content.slice(11).trim().split(' '));
 
-        if (!args.length) {
-            return msg.channel.send("You didn't provide any arguments. Usage: !setcolour [hexcode]")
-                .then(console.log)
-                .catch(console.error);
-        } else {
-            msg.channel.send(`First argument: ${args[0]}`)
-                .then(console.log)
-                .catch(console.error);
+        if (msg.content.includes("#")){
+            msg.channel.send("colour changed (in beta)")
+        }
+        else {
+            msg.channel.send("no arguments included.")
         }
     }
 
