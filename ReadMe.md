@@ -19,7 +19,7 @@ Planned Features (for now):
 1. Fork this repo.
 2. download Node.js https://nodejs.org/en/
 3. Open up cmd and type in: ``npm install discord.js``
-4. Start editing **app.js** (any text editor or IDE is ok, but I recommend Webstorm IDE. Also note that the other files are config files and cannot be changed)
+4. Start editing **app.js** (any text editor or IDE is ok, but I recommend VSCode. Also note that the other files are config files and cannot be changed)
 5. Push changes to your fork.
 6. Create a new Pull Request.
 7. Done 
