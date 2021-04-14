@@ -281,6 +281,11 @@ client.on('message', (msg) => {
             .catch(console.error);
     }
 
+    // !bye
+    if (msg.content === "!bye"){
+        msg.channel.send("Goodbye, ${message.author.toString()}")
+    }
+
 });
 
 // login
