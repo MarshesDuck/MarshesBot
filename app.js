@@ -80,6 +80,7 @@ const miao = [
     "all flesh is tempoary release yourself from your meat prisons",
     "Yes, you will be metaphysically deleted if you venture out of this channel",
     "Do not worry, for the ceasing of existence is nothing but bliss, you will be reborn into an untroubled world, unplagued by the quarrels of metaphysical existence",
+    "Smells like bot in here",
 ]
 
 // squish
@@ -116,7 +117,7 @@ client.on('message', (msg) => {
     // !help
     if (msg.content === "!help") {
         msg.channel.send(
-            "**Greetings**: !hello, !hi, !hoi, \n" +
+            "**Greetings**: !hello, !hi, !hoi, !bye\n" +
             "**Fun**: !joke, !av, !healme !repent \n" +
             "**Interact**: !pat, !flirt, !squish, !hp, !happiness, !feed \n"
         )
