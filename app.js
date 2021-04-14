@@ -283,7 +283,7 @@ client.on('message', (msg) => {
 
     // !bye
     if (msg.content === "!bye"){
-        msg.channel.send("Goodbye, ${message.author.toString()}")
+        msg.channel.send("Goodbye, " + msg.author.toString())
     }
 
 });
