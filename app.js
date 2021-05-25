@@ -186,6 +186,11 @@ client.on('message', (msg) => {
         msg.channel.send(bingo[Math.floor(Math.random() * bingo.length)]);
     }
 
+    // !pa
+    if (msg.content === '!pa'){
+        msg.channel.send("<:pa:840002930009964554>")
+    }
+
     // !apology
     if (msg.content === '!apology') {
         msg.channel.send("sorry if all of this is really awkward miao. I hope you can see the humour in it all.");
