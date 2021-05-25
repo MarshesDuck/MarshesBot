@@ -9,6 +9,39 @@ require('dotenv').config();
 let HP = 10;
 let Happiness = 10;
 
+// bingo machine
+const bingo = [
+    ":mage2:",
+    ":mage:",
+    ":vax2:",
+    ":microchip:",
+    ":pa:",
+    ":vax:",
+    ":cheating:",
+    ":aggressive:",
+    ":mirror2:",
+    ":tabone:",
+    ":kikot:",
+    ":duck_drink:",
+    ":frisk:",
+    ":sophia_swag:",
+    ":sophia_health:",
+    ":christmas:",
+    ":gabby_disapprove:",
+    ":mirror:",
+    ":jane:",
+    ":miao_drink:",
+    ":miao_despair:",
+    ":meg_thonk3:",
+    ":meg_thonk2:",
+    ":meg_thonk:",
+    ":meg_pain:",
+    ":meg_comfort:",
+    ":meg_cursed:",
+    ":chad:",
+    ":keepcool:",
+]
+
 // Jokes
 const jokes = [
     "What rock group has four men that don't sing? Mount Rushmore.",
@@ -146,6 +179,11 @@ client.on('message', (msg) => {
     // !scripture
     if (msg.content === '!miao') {
         msg.channel.send(miao[Math.floor(Math.random() * miao.length)]);
+    }
+
+    // !bingo
+    if (msg.content === '!bingo' || msg.content === '!b') {
+        msg.channel.send(bingo[Math.floor(Math.random() * bingo.length)]);
     }
 
     // !apology
