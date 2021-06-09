@@ -136,7 +136,7 @@ const squish = [
 // bot start
 client.on('ready', () => {
     console.log('Bot is ready');
-    client.user.setActivity('More human than MarshesDuck', {type: "WATCHING"}).catch(console.error)
+    client.user.setActivity('MarshesDuck', {type: "WATCHING"}).catch(console.error)
 
 });
 
