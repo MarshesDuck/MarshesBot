@@ -13,6 +13,14 @@ Planned Features (for now):
 - Command to say old quotes from a friend. 
 
 
+Running the bot:
+
+1. Build the docker image:
+    `docker built -t marshesbot .`
+
+2. Run the docker image:
+    `docker run -d marshesbot`
+
 # Add your own features!
 
 ### Method 1: DIY
