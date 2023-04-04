@@ -16,7 +16,7 @@ Planned Features (for now):
 Running the bot:
 
 1. Build the docker image:
-    `docker built -t marshesbot .`
+    `docker build -t marshesbot .`
 
 2. Run the docker image:
     `docker run -d marshesbot`
